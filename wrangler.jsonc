@@ -1,0 +1,11 @@
+{
+  "name": "lp-koryum",
+  "compatibility_date": "2026-11-01",
+  // roda o build antes de cada deploy (o painel está com "Comando da build: Nenhum")
+  "build": { "command": "npm run build" },
+  "assets": {
+    "directory": "./dist",
+    // /obrigado e outras rotas caem no index.html
+    "not_found_handling": "single-page-application"
+  }
+}
